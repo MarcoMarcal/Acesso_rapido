@@ -72,6 +72,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 100vh;
 }
 body *{
     font-weight: 500;
@@ -119,4 +120,13 @@ ul li a:hover{
 footer{
     text-align: center;
     font-family: 'Edu SA Beginner', cursive;
+}
+
+@media (min-width: 700px){
+    :root{
+        --back: url(./Image/bg-desktop.jpg);
+    }
+    .light{
+        --back: url(./Image/bg-desktop-light.jpg);
+    }
 }
