@@ -46,11 +46,14 @@ h2{
     z-index: 1;
     top: 50%;
     transform: translateY(-50%);
+    animation: slide-out 0.4s forwards;
  
 }
 .light #switch button{
-    right: 0;
-    left: initial;
+    animation: slide 0.4s forwards;
+}
+#switch button:hover{
+    outline: 8px solid var(--surface);
 }
 #switch span{
     display: block;
@@ -129,4 +132,22 @@ footer{
     .light{
         --back: url(./Image/bg-desktop-light.jpg);
     }
+}
+/*Animation switch*/
+@keyframes slide{
+    from{
+        left: 0;
+    }
+    to{
+        left: 50%;
+    }
+}
+@keyframes slide-out {
+    from{
+        left: 50%;
+    }
+    to{
+        left: 0;
+    }
+    
 }
