@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    
+}
+h2{
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 600;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+:root{
+    --text-color: white;
+    --back: url(./Image/bg-mobile.jpg);
+    --switch: url(./Image/MoonStars.svg);
+    --surface: rgba(255, 255, 255, 0.2);
+}
+.light{
+    --text-color: black;
+    --back: url(./Image/bg-mobile-light.jpg);
+    --switch: url(./Image/Sun.svg);
+    --surface: rgba(0, 0 , 0, 0.05);
+}
+ #switch{
+    position: relative;
+    width: 64px;
+    display: block;
+    margin: auto;
+    padding: 8px 0;
+
+ }
+#switch button{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+    background: white var(--switch);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+ 
+}
+.light #switch button{
+    right: 0;
+    left: initial;
+}
+#switch span{
+    display: block;
+    border-radius: 99999px;
+    width: 64px;
+    height: 24px;
+    background: var(--surface);
+    border: 1px solid var(--color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+#Conheca{
+    padding: 20px;
+    margin-right: auto;
+    text-align: left;
+}
+body{
+    background: var(--back);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+body *{
+    font-weight: 500;
+}
+#container{
+    width: 360px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0 24px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+    padding: 42px 0;
+
+}
+ul li a{
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+    border: 1px solid rgb(180, 179, 179);
+    background: var(--surface);
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+
+    transition: background 0.2s;
+
+}
+ul li a:hover{
+    background: rgba(255,255,255,0.1);
+    border: 2px solid white;
+}
+
+footer{
+    text-align: center;
+    font-family: 'Edu SA Beginner', cursive;
+}
